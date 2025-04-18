@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/amberross/Desktop/Workspace/First Program/First Program/First Program.csproj",
+      "projectUniqueName": "/Users/amberross/workspace/classwork/First Program/First Program/First Program.csproj",
       "projectName": "First Program",
-      "projectPath": "/Users/amberross/Desktop/Workspace/First Program/First Program/First Program.csproj",
+      "projectPath": "/Users/amberross/workspace/classwork/First Program/First Program/First Program.csproj",
       "packagesPath": "/Users/amberross/.nuget/packages/",
-      "outputPath": "/Users/amberross/Desktop/Workspace/First Program/First Program/obj/",
+      "outputPath": "/Users/amberross/workspace/classwork/First Program/First Program/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/amberross/.nuget/NuGet/NuGet.Config"

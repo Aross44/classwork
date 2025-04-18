@@ -80,9 +80,9 @@ class Program
        
        
        //Define the variables to hld the numbers we need to add 
-       int number1 = 0;
-       int number2 = 0;
-       int number3 = 0;
+       int number1 = 0; //Since we will be doing math it needs to be numeric
+       int number2 = 0; //Since we will be doing math it needs to be numeric
+       int number3 = 0; //Since we will be doing math it needs to be numeric
        
        
        
@@ -95,23 +95,47 @@ class Program
        
        //Ask for the numbers one at a time using the C# Console object
        //   which represents the keyboard and screen
-       // Console.Readline() returns a string - cannot store in an int
-       Console.WriteLine("Please enter a number:  "); //Asking for the number 
+       // Console.Readline() returns a string from keyboard- cannot store in an int
+       Console.WriteLine("You entered: " +number1);     //Asking for the number  
        string aline; //-------> //String to hold the line of input from the keyboard                           
-       aline = Console.ReadLine();
+       aline = Console.ReadLine();                  //Get a line from the keybboard //aline means the theResponse from whats being asked
        // We need an int value to store our numbers 
        // Console.Readline () only returns a string 
        //So we need to convert a string to an int
        // int.Parse(string) will convert a string to an int 
        number1 = int. Parse(aline);
-           
-        
+           //Just to verify  we are getting data from the keyboard
+           //Lets display it
+          // '+' with a string it concatentates 
        
        
        
        
        
         ///Console.WriteLine("--- Starting program ---");
+        
+        Console.WriteLine("Please enter a number");
+        aline = Console.ReadLine();                   //Reuse aline (The respose) defined above
+        number2 = int.Parse(aline);
+        
+        Console.WriteLine("Please enter a number ");
+        aline = Console.ReadLine();
+        number3 = int.Parse(aline);
+       
+        //Add the numbers together create a sum/total
+        sum = number1 + number2 + number3;
+       // Alternate coding method - Choose the coding style that you like 
+         //However you code as long as its correct 
+         //sum = sum + number1;
+         //sum = sum + number2;
+         //sum = sum +number3;
+        
+        // Tell the requester the sum/total (display)
+        Console.WriteLine("The sum is : " + sum); 
+       
+        
+        
+        
         
         Console. WriteLine("--- Ending program ---");
     }
