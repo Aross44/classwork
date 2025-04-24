@@ -1,7 +1,7 @@
 ﻿
    
-   using System;  // Gives access to basic commands like Console
-using System.Collections.Generic; // Gives access to Dictionary and List
+   //using System;  // Gives access to basic commands like Console
+//using System.Collections.Generic; // Gives access to Dictionary and List
 
 namespace ShoppingListProject
 {
