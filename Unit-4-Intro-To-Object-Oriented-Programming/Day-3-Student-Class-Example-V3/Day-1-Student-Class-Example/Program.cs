@@ -49,12 +49,36 @@ class Program
     // Console.WriteLine() does not now how to display an object of our class
     Console.WriteLine("aStudent: " + aStudent);
     
+    // Use the Student class method to diaplay Student class object
+    //
+    // object.method() <--- Object oriented notations 
+    //Console.WriteLine() displays strings on the screen
+    // it  expects you everything you ask it to display to be a string 
+    // If given a non-string value, It tries to convert it to a string 
+    //The way it trys to convert to 
+    // 1. Looks at the datatype of what you are trying to display 
+    //2. It determines if there is a method availible to convert the data type to a string 
+    //      data type to a string:
+   //     primative types (int, double, bool etc) all have methods to
+   //     convert them to strings
+   // 
+   //     objects must have a method defined in their class to 
+   //             return a string version of it's data
+   //     the method it looks for is called TooString()
+   //
+   //     if a class does not have a ToString() method 
+   //     C# returns Namespace.ClassName for any object of the class
+    
     // Use the Student class method to display Student class object
     //
     // object.method() <--- object oriented notations
     aStudent.ShowStudent();
     aStudent2.ShowStudent();
-    
+
+    List<double> newScores = new List<double>();
+    newScores.Add(0);
+    astudent.SetTestScores(newscores);
+    aStudent.ShowTestScores();
     // Define a student with no scores
     Student johnTheStudent = new Student("John"); 
     johnTheStudent.ShowStudent();  // Display the data in the Student Object
@@ -75,6 +99,50 @@ class Program
     Console.WriteLine($"\nThe sum of scores: {johnTheStudent.SumOfScores()}");
     Console.WriteLine($"\nThe avg of scores: {johnTheStudent.AvgOfScores()}");
 
+   // I want to see just the name of a student
     //Console.WriteLine(aStudent.studentName);
+
+
+    public string GetStudentName()
+    {
+        return studentName; //return the value in this private data number
+    }
+
+    public List<double> GetTestScores()
+    {
+        return GetTestScores; // return the value in this private data member 
+    }
+
+    public void SetStudentName(string newName)
+    {
+        studentName = newName;
+    }
+
+    public void SetTestScores(List<double> newScores)
+    {
+        testScores = newScores;
+        
+    }
+/***********************************************************************************************************************
+**********************************************************************************************************************/
+
+
+// WE need to provide a ToString() method  to return a string repres 
+
+
+// We need a method to allow the user to add scores to our testScores List 
+// Every method requires a method signature and a body 
+// Method signature: access return 
+//                  type    type   MethodName(parameters)
+// Method body: inside { } following method signature 
+        public void AddScore(double score) // Accept a scoreand return nothing 
+        {
+            testScores.Add(score);
+        }
+
+//Allow the user to get the sum of the scores   
+
+
+
     }
 }
