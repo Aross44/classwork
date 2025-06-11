@@ -75,6 +75,10 @@ yarn-error.log*
 **/.idea/shelf/*
 **/.idea/dictionaries
 **/.idea/httpRequests/
+<<<<<<< HEAD
+=======
+.out
+>>>>>>> d7911bb22c68dc0f64264c999a3dd97a50672135
 
 # Sensitive or high-churn files
 **/.idea/**/dataSources/
