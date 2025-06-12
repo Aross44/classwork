@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- This page will collect contact information for person -->
+ <!-- and send it to an external API to be stored -->
+  <html lanng="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Viewport" content="width=deice-width, initial-scale=1.0">
+        <title>Contact Info</title>
+        </head>
+        <body>
+            <header>
+                <main> <!-- contains the primary content of the page-->
+                        <!-- We use and HTML form to interact with used -->
+                         <!-- The form can send the data to an API or JavaScript program -->
+                          <!-- An API is a method on a different computer or process -->
+                          <!-- Typically data is sent to an API using an HTTP POST request -->
+                           <!-- An HTTP request is we ask a server to do something -->
+                            <!-- a server is another computer or process -->
+
+                            <!-- method="" type of HTTP reqest to issue wehn submit is clicked -->
+                            <!-- method= "POST" is the most common to send the form data via HTTP POST-->
+                             <form method="POST" action="https://6848583cec44b9f349409f8e.mockapi.io/DataFromClass">
+                                <!-- input tag components interact with the user 
+                                <!--       and are usually inside their own <div>   -->
+                               
+                               
+                                    <!-- the input tag has several atributes: -->
+                                <!-- type="" - type of input you want from the user-->
+                                <!-- id=""   - name used to identify the input field in the html -->
+                                <!-- name="" - nmame of the variable to hold the user input from form-->
+                                <!--           the name must watch what the API expects the field to called -->
+
+
+                                <!-- the <lable> tag provides information/prompt to the user on what to enter -->
+                                <!-- <lable> has one of attribute: for="id-of-the-associated-input-control" -->
+                                    <div> <!-- Ask for the user name -->
+                                        <lable for="nameField">Enter your full name: </lable>
+                                        <input type="text" id="nameField" name ="personName"/>
+                                        </div>
+                                        </form>
+
+                                        </main>
+                                    </body>
+                                    </html>

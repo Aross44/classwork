@@ -4,9 +4,73 @@
                                   css rule;
                                   css rule;
                                 }
-*/  
-/* for now we use html tags as selectors */
+* 
+selectors are; html tag name [- all elements defined with theis tag ]
+                # - id="" elements witht he same id="" -used for specific element
+                . - clas="" elements with the class="" - for specific
+/* for now we use html tags as selectors()which means anything in the html tag */
 
 html { /* style all the elements within the html tag */
-    background-color: lightgoldenrodyellow;
+  background-color:lightgoldenrodyellow ;
+  font-size: 20px;
+  color: blue;
+  }
+
+  h2{ /* Style all the elements within the h2 tags */
+    color: aquamarine;
+  }
+
+footer { /* style all the stuff in the footer */
+  color: red; /* make the text color*/
+  margin-top: 50px; /* move the text down this is much*/
+  font-size: 10;
+  text-align: center;
+}
+
+p{ /* style all the paragraph tag content*/
+  color: plum; /* font color */
+  font-size: 10x; /* font size */
+}
+
+#p2{ /* style all elements with the id= "p2"*/
+  color: orange;
+}
+
+div { /* style all the divs and everything in them*/
+  background-color: brown;
+}
+
+#Youssef  { /*style all the elements within id="Youssef" */
+  background-color: blue;
+}
+
+.normal {/* style all elements with class="normal"*/
+  background-color: azure;
+}
+
+/* style to <ol> of students in class */
+/* #sthestudents to reference it's id */
+/* ol to specify all <ol> tags would all <ol> tags not jsut the one we want */
+ol { /*Ask why #theStudents wouldnt show the edited elements*/
+  color: chocolate;
+  font-style: italic; /* set */
+  list-style: square; /* set what is used as a bullet for list items */
+  border-style: solid; /*Put a boarder around the element*/
+  border-color: darkmagenta;
+  border-width: 5px; /* set the color of the boarder */
+}
+
+table{ /* style all tables in html*/
+  border: 2px; /* set the border with type and color */
+}
+
+table
+
+
+th, td { /* style all the <th> and <td> tags in the html*/
+  border: 1px;
+  width: 100px;
+  height: 200;
+  text-align: center;
+
 }
