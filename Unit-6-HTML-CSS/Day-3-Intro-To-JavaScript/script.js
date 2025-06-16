@@ -10,8 +10,26 @@
  */
 function variables() {
   // Declares a variable where the value cannot be changed
+ const Avariables = 4
   // Declares a variable those value can be changed
   // Declares a variable that will always be an array
+  // console.log() - display data on the console (Console.Writeline() or system.out.print())
+  //JavaScript support interpolation to construct strings similar to C#
+  //
+  //Interpolatiom: `words ${variable}` C#: ${}
+  console.log(`The value in aVariable is: ${Avariables}`)
+  
+  //Declares a variable where the value cannot be changed 
+  //Declares a variable that can always be a array
+   let itBe = 87.4;
+   console.log(`The value in itBe is: ${itBe}`)
+    itBe = 1776;
+   console.log(`The value in itBe is: ${itBe}`)
+//Declares a variable that will always be an array
+let stuff = ["things", 'Kevin', 'Hello',774.6]
+console.log(stuff) //Display the array name is shows 
+console.table(stuff)
+
 }
 
 /**

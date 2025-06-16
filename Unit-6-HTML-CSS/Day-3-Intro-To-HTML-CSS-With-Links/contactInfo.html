@@ -6,12 +6,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Info</title>
+    <!-- Connect the HTML to its stylesheet -->
+     <link rel="stylesheet" href="contactInfo.css"
 </head>
 <body>
     <header>
         <h1>Contact Information Form</h1>
         <h3>Please enter your information and click submit</h3>
     </header>
+   <nav> <!-- optional section to organize links-->
+    <!--- anchor-tag <a> provides links to resources-->
+        <!-- href-"URL-of-you-want-to-go-->
+         <a href= "index.html">Retreat to Home Page </a>
+
+    </nav>
+   
     <main> <!-- contains the primary content of the page                    -->
            <!-- We use and HTML form to interact with a used                -->
            <!-- The form can send the data to an API or JavaScript program  --> 
@@ -37,11 +46,36 @@
 
             <!-- the <label> tag provides information/prompt to the user on what to enter-->
             <!-- <label> has one attribute:  for="id-of-the-associated-input-control"    -->   
-            <div> <!-- Ask for for the person's name -->     
+           di
+                <div> <!-- Ask for for the person's name -->     
                 <label for="nameField">Enter your full name: </label>
                 <input type="text" id="nameField" name="personsName"/>
             </div>    
-           </form>
+
+            <div> <!-- Ask for for the persons city where they live -->     
+                <label for="cityField">Enter the city where you reside: </label>
+                <input type="text" id="cityField" name="currentCity"/>  <!-- always double check and make sure the lable,id,name are updated*/--> 
+            </div>   
+          
+            <div> <!-- Ask for for the persons Favorite number -->     
+                <label for="favNumFiield">Please choose your favorite number: </label>
+                <input type="number" id="favNumberField" name="favoriteNumber"/>  <!-- always double check and make sure the lable,id,name are updated*/--> 
+            </div>   
+
+            <div> <!-- Ask for for the persons favorite color using the color picker -->     
+                <label for="favColorField">Enter the city where you reside: </label>
+                <input type="color" id="favoriteColorField" name="favoriteColor"/>  <!-- always double check and make sure the lable,id,name are updated*/--> 
+            </div>   
+        
+            <div> <!-- Ask for for the persons next birthday using date picker-->     
+                <label for="nextBirthdayField">Please choose your Bday: </label>
+                <input type="date" id="BdayField" name="nextBirthday"/>  <!-- always double check and make sure the lable,id,name are updated*/--> 
+            </div>   
+        
+        <!-- Define a submit button for the form -->
+         <!-- We need a submit button to send the form data to API or Javascript-->
+          <input type="submit" value="Click Here To Submit"> 
+        </form>
 
     </main>
 </body>
