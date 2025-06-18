@@ -1,6 +1,6 @@
 const productName = "Quark's Bar";
 const description = 'Located in Deep Space 9, near Bajor in the Alpha Quadrant';
-const reviews = [
+const reviews = [ //Data to be displayed on the web page
   {
     reviewer: 'Marcus Aurilious',
     title: 'Better have a lot of latinum!',
@@ -60,7 +60,7 @@ function setPageDescription() {
 function displayReviews() {
   const main = document.getElementById('main');  // Get to the div that will hold the reviews
 
-  reviews.forEach((aReview) => {
+  reviews.forEach((aReview) => { //Loop through the array of reviews
     const container = document.createElement('div');  // Create a div hold the review
     container.setAttribute('class','review');         // add class='review' to the div
     addReviewer(container, aReview.reviewer);         // Send the method the parent and data to add
