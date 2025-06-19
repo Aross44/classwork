@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "ARWebsite"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501
+	}
+}

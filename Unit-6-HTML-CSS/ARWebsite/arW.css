@@ -1,0 +1,22 @@
+html{
+    background-color: lavender;
+    font-size: 50px;
+    color: blueviolet;
+}
+
+h1{
+    font-size: 90px;
+    color: purple;
+    text-align: center;
+    font: bold;
+    font: italic;
+}
+
+h2{
+    font-size: 80px;
+    text-align: center;
+}
+
+ul{
+    text-align: left;
+}

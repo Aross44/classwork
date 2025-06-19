@@ -1,0 +1,23 @@
+html{
+    background-color: lavender;
+    font-size: 50px;
+    color: blueviolet;
+}
+
+h1{
+    font-size: 90px;
+    text-align: center;
+}
+
+h2{
+    font-size: 80px;
+    text-align: center;
+}
+body{
+    font-size: 50px;
+    text-align: center;
+}
+
+ul{
+    text-align: left;
+}
