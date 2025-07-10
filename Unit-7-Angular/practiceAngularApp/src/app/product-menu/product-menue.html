@@ -1,0 +1,11 @@
+<p>product-menue works!</p>
+<h2>Available Products</h2>
+<ul>
+  <li *ngFor="let product of allProducts">
+    <strong>{{ product.name }}</strong><br />
+    ID: {{ product.productID }}<br />
+    Price: ${{ product.price }}
+  </li>
+</ul>
+
+<p>Total Products: {{ allProducts.length }}</p>
