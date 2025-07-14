@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { Product } from '../product';
-import { ProductService } from '../product.service';
+import { ProductService } from '../product-service/product-service';
 @Component({
   selector: 'app-product-menue',
-  imports: [],
+  imports: [ProductService],
   templateUrl: './product-menue.html',
-  styleUrl: './product-menue.css'
+  styleUrl: './product-menue.css',
 })
 export class ProductMenue implements OnInit {   // idk?
   allProducts: Product[] = [];

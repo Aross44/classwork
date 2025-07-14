@@ -1,21 +1,32 @@
 import { Component } from '@angular/core';
-
+import { productService} from '';
+}
 @Component({
   selector: 'app-product-service',
   imports: [],
   templateUrl: './product-service.html',
   styleUrl: './product-service.css'
 })
-export class ProductService {
+export class ProductService  {
     inventoryArray: [] = [
-      { name: '', productID: '', price: },
-      { name: '', productID: '', price: },
-      { name: '', productID: '', price: },
-      { name: '', productID: '', price: },
-      { name: '', productID: '', price: },
-      { name: '', productID: '', price: },
+      { name: 'Volume1', productID: 'Ar101', price: 25},
+      { name: 'Volume2', productID: 'Ar102', price: 50},
+      { name: 'Volume3', productID: 'Ar1013', price: 75},
+      { name: 'Volume4', productID: 'Ar104', price: 100},
+      { name: 'Volume5', productID: 'Ar105', price: 125},
+      { name: 'Volume6', productID: 'Ar106', price: 150},
     ];
-    getAllProducts(): Product[] {
+
+
+
+
+
+
+
+
+
+
+    getAllProducts(): Product[]  {
       return this.inventory;
     }
     //const name: string[] = [];
