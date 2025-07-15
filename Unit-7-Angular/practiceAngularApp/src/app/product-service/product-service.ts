@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { productService} from '';
-}
+import { Product } from '../product';   
+
+
 @Component({
   selector: 'app-product-service',
   imports: [],
@@ -8,7 +9,7 @@ import { productService} from '';
   styleUrl: './product-service.css'
 })
 export class ProductService  {
-    inventoryArray: [] = [
+    Inventory: Product[] = [
       { name: 'Volume1', productID: 'Ar101', price: 25},
       { name: 'Volume2', productID: 'Ar102', price: 50},
       { name: 'Volume3', productID: 'Ar1013', price: 75},
@@ -26,9 +27,8 @@ export class ProductService  {
 
 
 
-    getAllProducts(): Product[]  {
-      return this.inventory;
-    }
+    getAllProducts():   Product[] {
+      return this.Inventory;
     //const name: string[] = [];
     //name.push("");  
 
@@ -36,4 +36,6 @@ export class ProductService  {
    //numbers.push(4);
    // numbers.push("2"); // Error: Argument of type 'string' is not assignable to parameter of type 'number'.
    // let head: number = numbers[0];
-}
+
+    }
+  }
