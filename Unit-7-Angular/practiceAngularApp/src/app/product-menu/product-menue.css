@@ -1,0 +1,22 @@
+h2 {
+  color: #2a3d66;
+  font-family: Arial, sans-serif;
+  margin-bottom: 10px;
+}
+
+.product-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.product-list li {
+  background-color: #f1f1f1;
+  margin-bottom: 6px;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.total {
+  margin-top: 10px;
+  font-weight: bold;
+}

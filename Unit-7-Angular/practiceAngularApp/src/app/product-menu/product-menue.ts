@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { Product } from '../product';
 import { ProductService } from '../product-service/product-service';
+import { OnInit } from '@angular/core';
 @Component({
+  imports: [CommonModule],
   selector: 'app-product-menue',
-  imports: [ProductService],
+  standalone : true,
   templateUrl: './product-menue.html',
   styleUrl: './product-menue.css',
 })
