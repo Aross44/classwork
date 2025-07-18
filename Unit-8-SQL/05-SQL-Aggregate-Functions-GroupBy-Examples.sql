@@ -233,11 +233,22 @@ select name, min(surfacearea)
   limit 1
 ;
 
+
+--average surface area for each continent but not more than 5 
+--
+
+select continent, avg(surfacearea) -- show average surface area
+	from country		-- table with the data we want
+	group by continent  -- for each continent 
+	limit 5 			-- but not more than 5 
+;
+
+
 -- Show The 10 largest countries (by surface area) in the world
 select name,surfacearea
   from country
-order by surfacearea desc
-limit 10
+order by surfacearea desc -- sort the highest ones first to hep get the top
+limit 10				-- show only the first 10 rows
 ;
 -- Show The 10 largest countries (by surface area) in the world
 select name,max(surfacearea)

@@ -184,6 +184,29 @@ select gambler_name as Name
 order by Annual_Salary desc 
 ;
 
+--show everyones name and adress in alpabetical order 
+-- only if the adress not known 
 
+select gambler_name, address
+from gambler
+where address = null
+order by address Desc
+;
 
+--
+-- show me gamblers with an 'd in there name 
+-- 
+select gambler_name
+from gambler
+where gambler_name like '%d%' -- case sensitive like only for lower case 'd'
+;
+--
+select casino_name -- distinct will only
+from host
+;
 
+--
+-- show me unique casino names in the host table 
+select distinct casino_name -- distinct will only show unique values in the colum 
+from host 				   -- distinct will also sort in ascending by the colum specified 
+;
