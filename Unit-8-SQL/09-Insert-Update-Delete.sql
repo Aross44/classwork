@@ -89,9 +89,53 @@
 ---------------------------------------------------------------------------------------------------------------------------------------
 -- INSERT
 --
+-- Dog 	Great Dane
+-- Dog 	Xolo
+-- Dog	Dalmation
+-- Cat Burmeese
+-- Cat  Sphinx
+--
+-- IF 
+delete from pet_types
+
+INSERT into pet_types
+	(name , species)
+	values('Xolo','Dog',);
+	
+	
+select * from pet_types;
+
+INSERT into pet_types
+	(name , species)
+	values('Great Dane','Dog',);
+	
+	select * from pet_types;
+
+INSERT into pet_types
+	(name , species)
+	values('Dalamation','Dog',);
+	-- if you omit colum names 
+	
+	
+	select * from pet_types;
+
+INSERT into pet_types
+	(name , species)
+	values('Sphinx','Cat',);
+
+select * from pet_types;
+
+INSERT into pet_types
+	(name , species)
+	values('Burmese','Cat',);
+
+	select * from pet_types;
+	
+
+	
 
 
-
+select * from pet_types;
 -- UPDATE
 
 
