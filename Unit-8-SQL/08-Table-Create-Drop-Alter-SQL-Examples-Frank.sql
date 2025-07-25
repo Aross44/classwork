@@ -127,6 +127,17 @@ Create table owner
 -- Create the pet table
 -- (Dependent Table to pet and owner -Dependents must be created after parents)
 --
+-- ON DELETE in the foreign key Constraint says what to do with rows in this table if the parent row is deleted 
+--			 if the parent row is deleted
+--
+-- 		ON DELETE CASCADE - Delete the dependent row in this table too
+--
+-- 		on Delete SET NULL - Set the foreign key column in this table taht matches the primary key of the row 
+--		being deleted in the parent to NULL
+--	  The Foreing Key colum must allow Nulls 
+--      It cant be part of the primary key 
+--				Unique
+--
 Create table pet
 (
 pet_id       serial        not null,
@@ -136,8 +147,8 @@ pet_type_id  integer       not null, -- match to an existing in parent
 owner_id     integer       not null, 
 CONSTRAINT pk_id PRIMARY KEY (pet_id),
 CONSTRAINT fk_pet_type_id FOREIGN KEY(pet_type_id) 
-           REFERENCES pet_types(pet_type_id),
+           REFERENCES pet_types(pet_type_id) ON DELETE CASCADE,
 CONSTRAINT fk_ownerid FOREIGN KEY(owner_id) 
-           REFERENCES owner(owner_id)	  
+           REFERENCES owner(owner_id)	  ON DELETE SET NULL
 )
 ;

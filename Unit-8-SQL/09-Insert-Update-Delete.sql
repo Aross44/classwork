@@ -94,7 +94,7 @@
 -- Dog	Dalmation
 -- Cat Burmeese
 -- Cat  Sphinx
---
+-- Cat  Siamese
 -- IF 
 delete from pet_types
 
@@ -114,20 +114,20 @@ INSERT into pet_types
 INSERT into pet_types
 	(name , species)
 	values('Dalamation','Dog',);
-	-- if you omit colum names 
+	-- if you omit colum names all non-null 
 	
 	
 	select * from pet_types;
 
 INSERT into pet_types
 	(name , species)
-	values('Sphinx','Cat',);
+	values('Sphinx','Cat',);  -- pet_type-id nor specified as it is auto generated 
 
 select * from pet_types;
 
 INSERT into pet_types
 	(name , species)
-	values('Burmese','Cat',);
+	values('Burmese','Cat',);  -- pet_type-id nor specified as it is auto generated
 
 	select * from pet_types;
 	
